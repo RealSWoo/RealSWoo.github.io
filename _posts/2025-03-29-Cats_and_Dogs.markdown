@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Linear Regression
-date: 2025-04-05 09:01:00 +0900
+title: Cats and Dogs Recognition
+date: 2025-03-29 09:01:00 +0900
 category: sample
 ---
 
