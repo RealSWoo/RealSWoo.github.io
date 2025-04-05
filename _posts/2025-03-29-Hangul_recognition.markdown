@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Hangul Recognition OCR
-date: 2025-04-05 9:31:29 +0900
-categories: Code
+date: 2025-03-29 9:31:29 +0900
+categories: Hangul Recognition Code
 ---
 
 This is code
