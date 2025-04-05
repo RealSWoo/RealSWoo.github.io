@@ -143,9 +143,10 @@ epoch=1900, slope=2.0000, intercept=1.0000, error=0.0000
 epoch=2000, slope=2.0000, intercept=1.0000, error=0.0000
 
 
-The graph of the results
+The graph of the results   
 
-![Image](https://github.com/user-attachments/assets/df2544cd-9d40-46f3-83e5-910305eb25d5)
+
+![Image](https://github.com/user-attachments/assets/9c356eee-fd4a-4a3d-b11f-3e34ab276943)
 
 ![Image](https://github.com/user-attachments/assets/b52d1a29-336e-48d1-bc36-6f5100e2f99a)
 
