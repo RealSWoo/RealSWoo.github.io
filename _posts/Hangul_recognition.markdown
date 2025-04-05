@@ -2,7 +2,7 @@
 layout: post
 title: Hangul Recognition OCR
 date: 2025-04-05 9:31:29 +0900
-category: sample
+categories: sample
 ---
 
 This is code
