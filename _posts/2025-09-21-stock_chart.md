@@ -1,3 +1,11 @@
+---
+layout: post
+title:  "Stock Chart"
+date:   2025-09-21 00:00:00 +0900
+categories: Project - stock chart
+---
+
+```ruby
 import FinanceDataReader as fdr
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -106,3 +114,4 @@ plt.legend()
 
 plt.tight_layout()
 plt.show()
+```
