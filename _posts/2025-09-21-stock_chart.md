@@ -2,7 +2,7 @@
 layout: post
 title:  "Stock Chart"
 date:   2025-09-21 00:00:00 +0900
-categories: Project - stock chart
+categories: Project
 ---
 
 ```ruby
