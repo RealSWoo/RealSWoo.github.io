@@ -6,9 +6,9 @@ categories: Pandas
 ---
 pandas 공식 홈페이지에서 "10minutes to pandas"를 보고 공부 및 번역한 내용입니다.
 
-<해당 코드는 Visual Studio Code에서 실행하였습니다.>
+* 해당 코드는 Visual Studio Code에서 실행하였습니다.
 
-<오타나 오번역 있을 시 말씀해주시면 수정 반영하겠습니다.>
+* 오타나 오번역 있을 시 말씀해주시면 수정 반영하겠습니다.
 
 우선 다음과 같이 import 합니다
 
