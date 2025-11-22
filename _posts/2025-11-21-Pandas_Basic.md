@@ -9,7 +9,7 @@ pandas 공식 홈페이지에서 "10minutes to pandas"를 보고 공부 및 번�
 * 해당 코드는 Visual Studio Code에서 실행하였습니다.
 * 오타나 오번역 있을 시 말씀해주시면 수정 반영하겠습니다.`</br>`
 
-우선 다음과 같이 import 합니다
+  우선 다음과 같이 import 합니다
 
 ```ruby
 import numpy as np
