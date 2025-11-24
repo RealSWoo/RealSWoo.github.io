@@ -4,13 +4,15 @@ title:  "Pandas Basic(데이터 구조, 객체 생성, 데이터 확인)"
 date:   2025-11-21 00:00:00 +0900
 categories: Pandas
 ---
-pandas 공식 홈페이지에서 "10minutes to pandas"를 보고 공부 및 번역한 내용입니다.  
+pandas 공식 홈페이지에서 "10minutes to pandas"를 보고 공부 및 번역한 내용입니다.
+
 
 
 * 해당 코드는 Visual Studio Code에서 실행하였습니다.
 * 오타나 오번역 있을 시 말씀해주시면 수정 반영하겠습니다.
 
-> 우선 다음과 같이 import 합니다.
+우선 다음과 같이 import 합니다.  
+
 
 ```ruby
 import numpy as np
@@ -31,7 +33,7 @@ Pandas에서 데이터를 다루기 위해 제공하는 두 가지 기본 자료
    * 각 열(column)은 하나의 Series 객체로 간주될 수 있습니다.
    * 각 열은 서로 다른 데이터 유형을 가질 수 있습니다.
 
-Series 생성을 합니다.
+Series 생성을 합니다.`<br>`
 
 ```ruby
 [In]
