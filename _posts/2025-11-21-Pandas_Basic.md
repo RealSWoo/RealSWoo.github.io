@@ -6,13 +6,12 @@ categories: Pandas
 ---
 pandas 공식 홈페이지에서 "10minutes to pandas"를 보고 공부 및 번역한 내용입니다.
 
-
-
 * 해당 코드는 Visual Studio Code에서 실행하였습니다.
 * 오타나 오번역 있을 시 말씀해주시면 수정 반영하겠습니다.
 
-우선 다음과 같이 import 합니다.  
+&nbsp;
 
+우선 다음과 같이 import 합니다.
 
 ```ruby
 import numpy as np
@@ -21,6 +20,8 @@ import pandas as pd
 
 - pandas 라이브러리를 import(불러오기)하고 pd 라고 명명합니다. 이렇게 하면 코드 작성시 pandas 대신 pd를 사용하여 pandas 기능에 접근할 수 있습니다.
 - numpy도 마찬가지로 np라고 명명합니다.
+
+&nbsp;
 
 Pandas에서 데이터를 다루기 위해 제공하는 두 가지 기본 자료 구조는 다음과 같습니다.
 
@@ -33,7 +34,9 @@ Pandas에서 데이터를 다루기 위해 제공하는 두 가지 기본 자료
    * 각 열(column)은 하나의 Series 객체로 간주될 수 있습니다.
    * 각 열은 서로 다른 데이터 유형을 가질 수 있습니다.
 
-Series 생성을 합니다.`<br>`
+&nbsp;
+
+Series 생성을 합니다.
 
 ```ruby
 [In]
