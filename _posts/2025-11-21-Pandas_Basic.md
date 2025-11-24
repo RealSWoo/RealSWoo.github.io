@@ -57,6 +57,8 @@ dtype : float64
 
 결측치 Nan 때문에 데이터 타입은 정수가 아닌 float64로 실수입니다.
 
+&nbsp;
+
 DataFrame 생성을 합니다.
 
 Numpy 배열과 date_range()를 사용한 Date time index 및 레이블이 지정된 열(labled columns)을 이용하여 DataFrame을 생성하는 방법입니다.
@@ -130,6 +132,8 @@ print(df2)
 * E : 범주형 데이터(Categorical)
 * F : 모든 행에 같은 문자열 "foo"
 
+&nbsp;
+
 결과 DataFrame의 Column별 데이터 타입입니다.
 
 ```ruby
@@ -152,6 +156,8 @@ dtype: object
 * D : int32 (32비트 정수형, NumPy 배열 생성 시 지정)
 * E : category (범주형 데이터)
 * F : object (문자열 또는 혼합형 데이터 타입)
+
+&nbsp;
 
 다음으로 DataFrame.head()와 DataFrame.tail()을 사용하여 DataFrame의 위쪽(top) 행과 아래쪽(bottom) 행을 각각 볼 수 있습니다.
 
@@ -179,7 +185,9 @@ print(df.tail(3))
 
 분석 초기에 데이터 구조와 값 분포를 빠르게 확인할 때 유용합니다.
 
-지금 사용한 df의 값들은 np.random.randn(6, 4) 때문에 생성된 랜덤 값으로 위 결과 값은 다르게 보일 수 있습니다. (평균 0, 표준편차 1인 실수)`</br>`
+지금 사용한 df의 값들은 np.random.randn(6, 4) 때문에 생성된 랜덤 값으로 위 결과 값은 다르게 보일 수 있습니다. (평균 0, 표준편차 1인 실수)
+
+&nbsp;
 
 DataFrame의 행 레이블(index) 또는 열 레이블(columns)을 확인하는 방법입니다.
 
@@ -201,6 +209,8 @@ Index(['A', 'B', 'C', 'D'], dtype='object')
 
 위와 마찬가지로 지정해준 내역을 볼 수 있습니다.
 
+&nbsp;
+
 DataFrame.to_numpy() 메서드를 사용하여 인덱스나 열 레이블 없이 DataFrame의 기본 데이터만 NumPy 배열(array)로 추출 할 수 있습니다.
 
 ```ruby
@@ -219,6 +229,10 @@ array([[ 0.4691, -0.2829, -1.5091, -1.1356],
 행 인덱스/열 이름 등은 제외하여 순수 2차원으로 숫자를 배열합니다.
 
 이는 빠른 수치 계산에 유리한 특징이 있습니다.
+
+&nbsp;
+
+&nbsp;
 
 ★ Pandas DataFrame과 NumPy 배열 간의 근본적인 차이점과 DataFrame을 NumPy 배열로 변환할 때(DataFrame.to_numpy()) 발생하는 데이터 타입 처리 및 성능 문제를 살펴 볼 필요가 있습니다.
 
@@ -252,6 +266,8 @@ array([[ 0.4691, -0.2829, -1.5091, -1.1356],
         dtype=object)
   ```
 
+&nbsp;
+
 Dataframe.describe()를 사용한 데이터 통계 요약입니다.
 
 Dataframe.describe 메서드는 데이터에 대한 빠른 통계 요약을 볼 수 있는데, 이 함수는 기본적으로 숫자형 데이터를 가진 열에 대해서만 작동합니다.
@@ -276,6 +292,8 @@ min   -0.861849 -2.104569 -1.509059 -1.135632
 max    1.212112  0.567020  0.276232  1.071804
 ```
 
+&nbsp;
+
 데이터 전치(Transposing)는 DataFrame의 행과 열을 바꾸어(뒤집어) 표시하려면 .T 속성을 사용합니다.
 
 ```ruby
@@ -289,6 +307,8 @@ B   -0.282863   -0.173215   -2.104569   -0.706771    0.567020    0.113648
 C   -1.509059    0.119209   -0.494929   -1.039575    0.276232   -1.478427
 D   -1.135632   -1.044236    1.071804    0.271860   -1.087401    0.524988
 ```
+
+&nbsp;
 
 DataFrame.sort_index() 메서드는 지정된 축(axis)을 기준으로 인덱스(index) 또는 열 레이블을 정렬하는 것입니다.
 
@@ -308,6 +328,8 @@ print(df.sort_index(axis=1, ascending=False))
 2013-01-06  0.524988 -1.478427  0.113648 -0.673690
 ```
 
+&nbsp;
+
 DataFrame.sort_values() 메서드는 지정된 열에 있는 데이터 값을 기준으로 DataFrame의 행 전체를 정렬합니다.
 
 ```ruby
@@ -324,8 +346,14 @@ print(df.sort_values(by="B"))
 2013-01-05 -0.424972  0.567020  0.276232 -1.087401
 ```
 
+&nbsp;
+
+&nbsp;
+
 지금까지 Pandas의 기본 자료 구조(Basic data structure)와 객체 생성(Object creation) 그리고 데이터 확인(Viewing Data)에 대해 알아 보았습니다.
 
 다음 포스팅에는 데이터 선택(Selection), 결측치 처리(Missing data), 연산(Operatios)에 대해 알아보겠습니다.
+
+&nbsp;
 
 감사합니다.
