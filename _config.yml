@@ -21,7 +21,7 @@
 title: RealSWoo's Blog
 email: swoo226@oton.kr
 description: >- # this means to ignore newlines until "baseurl:"
-  인공지능 프로젝트와 개발, 프로그래밍
+  인공지능 프로젝트와 공부
 # baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://realswoo.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: RealSWoo
