@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Pandas Basic(데이터 구조, 객체 생성, 데이터 확인)"
+title:  "Pandas Basic 데이터 구조, 객체 생성, 데이터 확인"
 date:   2025-11-21 00:00:00 +0900
 categories: Pandas
 ---
