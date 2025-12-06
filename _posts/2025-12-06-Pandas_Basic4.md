@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Pandas Basic 병합, 그룹화, 재구조화"
-date:   2025-12-05 00:00:00 +0900
+date:   2025-12-05 09:00:00 +0900
 categories: Pandas
 ---
 pandas 공식 홈페이지에서 "10minutes to pandas"를 보고 공부 및 번역한 내용입니다.
