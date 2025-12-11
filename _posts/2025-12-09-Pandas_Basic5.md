@@ -271,3 +271,5 @@ df.plot();
 [In]
 plt.legend(loc='best');
 ```
+
+![img](https://github.com/RealSWoo/RealSWoo.github.io/blob/main/public/img/screenshot-2512112.png)
