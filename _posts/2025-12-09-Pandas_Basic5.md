@@ -248,7 +248,7 @@ ts = ts.cumsum()
  ts.plot();
 ```
 
-![img](https://github.com/RealSWoo/RealSWoo.github.io/blob/main/public/img/screenshot-251211.png)
+![img](/public/img/screenshot-251211.png)
 
 이제 plot()로 모든 열을 그래프로 그립니다.
 
