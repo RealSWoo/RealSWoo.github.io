@@ -249,3 +249,25 @@ ts = ts.cumsum()
 ```
 
 ![img](https://github.com/RealSWoo/RealSWoo.github.io/blob/main/public/img/screenshot-251211.png)
+
+이제 plot()로 모든 열을 그래프로 그립니다.
+
+```ruby
+[In]
+df = pd.DataFrame(
+    np.random.randn(1000, 4), index=ts.index, columns=["A", "B", "C", "D"]
+)
+ 
+
+[In]
+df = df.cumsum()
+
+[In]
+plt.figure();
+
+[In]
+df.plot();
+
+[In]
+plt.legend(loc='best');
+```
