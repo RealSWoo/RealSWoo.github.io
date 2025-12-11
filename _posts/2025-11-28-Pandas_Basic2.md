@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Pandas Basic 데이터 선택, 결측치 처리, 연산 중 데이터 선택"
+title:  "10minutes to Pandas 데이터 선택, 결측치 처리, 연산 중 데이터 선택"
 date:   2025-11-28 00:00:00 +0900
 categories: Pandas
 ---
@@ -339,7 +339,6 @@ print(df[df > 0])
 df[df > 0] 구문은 DataFrame의 모든 셀에 대해 값이 0보다 큰지 확인합니다.
 
 0보다 크다면 True인 원본 값을 유지하고, 0보다 작으면 False인 Nan(결측값)으로 대체합니다.
-
 
 isin() 메서드를 사용하여 필터링하는 방법입니다.
 
