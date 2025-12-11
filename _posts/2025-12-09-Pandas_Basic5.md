@@ -247,3 +247,5 @@ ts = ts.cumsum()
 [In]
  ts.plot();
 ```
+
+![img](https://github.com/RealSWoo/RealSWoo.github.io/blob/main/public/img/screenshot-251211.png)
