@@ -272,4 +272,131 @@ df.plot();
 plt.legend(loc='best');
 ```
 
-![img](https://github.com/RealSWoo/RealSWoo.github.io/blob/main/public/img/screenshot-2512112.png)
+![img](/public/img/screenshot-2512112.png)
+
+&nbsp;
+
+다음으로 데이터 가져오기/내보내기에서 csv, parquet, excel 순으로 살펴보겠습니다.
+
+```ruby
+[In]
+df = pd.DataFrame(np.random.randint(0, 5, (10, 5)))
+
+[In]
+df.to_csv("foo.csv")
+
+[In]
+pd.read_csv("foo.csv")
+
+[Out] 
+   Unnamed: 0  0  1  2  3  4
+0           0  4  3  1  1  2
+1           1  1  0  2  3  2
+2           2  1  4  2  1  2
+3           3  0  4  0  2  2
+4           4  4  2  2  3  4
+5           5  4  0  4  3  1
+6           6  2  1  2  0  3
+7           7  4  0  4  4  4
+8           8  4  4  1  0  1
+9           9  0  4  3  0  3
+```
+
+다음으로 parquet 입니다.
+
+```ruby
+[In]
+df.to_parquet("foo.parquet")
+
+[In]
+pd.read_parquet("foo.parquet")
+
+[Out] 
+   0  1  2  3  4
+0  4  3  1  1  2
+1  1  0  2  3  2
+2  1  4  2  1  2
+3  0  4  0  2  2
+4  4  2  2  3  4
+5  4  0  4  3  1
+6  2  1  2  0  3
+7  4  0  4  4  4
+8  4  4  1  0  1
+9  0  4  3  0  3
+```
+
+excel입니다.
+
+```ruby
+[In]
+df.to_excel("foo.xlsx", sheet_name="Sheet1")
+
+[In]
+pd.read_excel("foo.xlsx", "Sheet1", index_col=None, na_values=["NA"])
+
+[Out] 
+   Unnamed: 0  0  1  2  3  4
+0           0  4  3  1  1  2
+1           1  1  0  2  3  2
+2           2  1  4  2  1  2
+3           3  0  4  0  2  2
+4           4  4  2  2  3  4
+5           5  4  0  4  3  1
+6           6  2  1  2  0  3
+7           7  4  0  4  4  4
+8           8  4  4  1  0  1
+9           9  0  4  3  0  3
+```
+
+&nbsp;
+
+마지막으로 주의사항을 알아보고 마치겠습니다.
+
+Pandas에서 Series 또는 DataFrame에 대해 불리언 연산을 시도할때 즉, 두 개 이상의 불리언 조건을 결합하여 데이터를 필터링 할 때, Python의 표준 논리 연산자를
+
+잘못 사용하여 발생하는 흔한 오류에 대한 경고입니다.
+
+```ruby
+[In]
+if pd.Series([False, True, False]):
+     print("I was true")
+ 
+---------------------------------------------------------------------------
+ValueError                                Traceback (most recent call last)
+<ipython-input-141-b27eb9c1dfc0> in ?()
+----> 1 if pd.Series([False, True, False]):
+      2      print("I was true")
+
+~/work/pandas/pandas/pandas/core/generic.py in ?(self)
+   1578     @final
+   1579     def __nonzero__(self) -> NoReturn:
+-> 1580         raise ValueError(
+   1581             f"The truth value of a {type(self).__name__} is ambiguous. "
+   1582             "Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+   1583         )
+
+ValueError: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+```
+
+ValueError는 Series의 truth value 값이 모호하여 a.empty, a.bool(), a.item(), a.any(), a.all() 을 사용하라는 말입니다.
+
+예를 들어 Series에 True가 하나라도 있다는 것을 의도했다면
+
+```ruby
+# Series에 True가 하나라도 있는지 확인 (any())
+[In]
+if pd.Series([False, True, False]).any():
+    print("I was true")
+[Out]
+I was true
+```
+
+와 같이 되어야합니다.
+
+&nbsp;
+
+&nbsp;
+
+이상으로 10minutes to pandas에 대한 전반적인 내용을 마치겠습니다.
+
+긴 글을 읽어주셔서 감사합니다.
