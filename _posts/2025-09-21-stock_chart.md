@@ -4,7 +4,6 @@ title:  "Stock Chart"
 date:   2025-09-21 00:00:00 +0900
 categories: Project
 ---
-
 ```ruby
 import FinanceDataReader as fdr
 import matplotlib.pyplot as plt
@@ -115,3 +114,5 @@ plt.legend()
 plt.tight_layout()
 plt.show()
 ```
+
+![img](/public/img/screenshot-251229.png)
