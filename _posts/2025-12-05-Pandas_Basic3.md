@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "10minuts to Pandas 데이터 선택, 결측치 처리, 연산 중 결측치 처리, 연산"
+title:  "10minutes to Pandas 데이터 선택, 결측치 처리, 연산 중 결측치 처리, 연산"
 date:   2025-12-05 00:00:00 +0900
 categories: Pandas
 ---
